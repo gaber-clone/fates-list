@@ -1,0 +1,646 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <title>Fates List | Discord Bot List</title>
+    <meta name="title" content="Fates List | Discord Bot List">
+    <meta name="description" content="Find, invite and discover the best Discord bots, now on Fates List.">
+    <meta name="keywords" content="discord bot list, fateslist, fates list, bot list, discord list, list of bost, discord bots, fateslist bots, fates list">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fateslist.xyz/">
+    <meta property="og:title" content="Fates List | Discord Bot List">
+    <meta property="og:description" content="Find, invite and discover the best Discord bots, now on Fates List.">
+    <meta property="og:image" content="https://fateslist.xyz/static/assets/img/banner.webp">
+
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://fateslist.xyz/">
+    <meta property="twitter:title" content="Fates List | Discord Bot List">
+    <meta property="twitter:description" content="Find, invite and discover the best Discord bots, now on Fates List.">
+    <meta property="twitter:image" content="https://fateslist.xyz/static/assets/img/banner.webp">
+    <link rel="canonical" href="https://fateslist.xyz/" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+
+    <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc1/css/material.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/css/front-head.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fates-List/FatesList@master/static/assets/css/styles.css">
+
+    <style>
+        .btn-no {border: none !important; outline: none !important;}
+        .fform {
+            background: #ffffff !important;
+            border: grey !important;
+            margin-top: 7px !important;
+            margin-bottom: 30px !important;
+            margin: auto;
+            max-width: 1000px;
+        }
+        label {
+            color: white !important;
+            font-weight: bold !important;
+            font-size: 16px !important;
+        }
+        textarea {
+            max-width: 1000px;
+            min-height: 50px !important;
+        }
+
+        .bot-card:hover {
+            transform: scale(1.025, 1.025) perspective(1px) translateZ(0);
+            filter: blur;
+            -webkit-filter: blur(0);
+
+        }
+        .profile-card:hover {
+            transform: scale(1.025, 1.025) perspective(1px) translateZ(0);
+        }
+
+        html, body, header, nav, footer {font-family: 'Lexend Deca', sans-serif !important;}
+        p {font-family: 'Lexend Deca', sans-serif !important;}
+        input[type="text"] {
+        }
+        .btn {
+            border-radius: 4px 4px 4px 4px !important;
+        }
+        label {font-size: 14px;}
+        ::selection {
+            background: #ffb7b7 !important; /* WebKit/Blink Browsers */
+        }
+        ::-moz-selection {
+            background: #ffb7b7 !important; /* Gecko Browsers */
+        }
+
+        .long-desc-link {color: white !important; opacity: 0.63 !important;}
+
+
+        @media screen and (min-width: 768px) {
+            .index-fl {justify-content: center; text-align: center;}
+            .content-mobileonly {display: none !important;}
+        }
+        @media screen and (max-width: 768px) {
+            .index-fl {justify-content: center; text-align: center;}
+            .content-nomobile {display: none !important;}
+        }
+
+        .form {
+            display: inline-block;
+            background-color: white;
+            padding: 15px;
+            border-radius: 50px 50px 50px 50px !important;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .select_tags, input, .wtype {
+            border-radius: 95px 97.5px 95px 97.5px !important;
+            padding: 10px !important;
+        }
+
+        textarea {
+            border-radius: 30px 30px 30px 30px !important;
+            padding: 10px !important;
+            height: 500px;
+        }
+        .highlight {
+            background-color: black;
+            font-weight: bold;
+        }
+
+        .desc-info {
+            background-color: blue;
+        }
+
+        /* Utlity */
+        .white-bold {color: white;font-weight: bold;}
+
+        /* Index + Bot Card */
+        .hr-is {font-size: 20px; border-top-width: 1px; border-top-color: #eee; width: 90%;}
+        .title-is {color: rgba(255,255,255,0.87); margin-left: 15px; font-size: 32px;}
+        .div-is {width: 90%;margin: 30px 5%;}
+        .bot-card {width: 300px;height: 475px;background: #111112;box-shadow: 0px 0px 20px 5px;border-top-style: none;margin: 25px 25px; border-radius: 10px 10px 10px 10px;}
+        .bot-card-banner {width: 100%;height: 30%;background: center / cover no-repeat;}
+        .bot-card-avatar {border-radius: 50%;width: 30%;margin: 5% auto;margin-top: 17%;margin-right: 35%;margin-left: 35%}
+        .bot-card-username {margin-right: auto;margin-left: auto;margin-top: 30px;width}
+        .bot-card-username-txt {white-space: nowrap;text-overflow: ellipsis;overflow: hidden; font-size: 21px; margin-top: 35px}
+        .bot-card-description {font-size: 16px;font-weight: bold;color: white;opacity: 0.63;width: 90%;margin: 0 5%;height:105px}
+        .bot-card-cert {color:#7289DA; position: absoulute; margin-top: -15px; margin-left: 90%}
+        .bot-card-footer {width: 80%;margin: 0 10%;height: 10%;margin-top: 20px;margin-bottom: 20px;}
+        .bot-card-footer-stats {height: 30px !important; width: 55% !important;}
+        .i-m3 {margin-right: 3px}
+        .bot-card-actions {width: 80%;margin: 0 10%;}
+        .bot-card-actions-link {width: 45%; font-weight: bold; border: none !important; outline: none !important;}
+        /*width: 45%;margin-right: 5%;border-radius: 25px;font-weight: bold;*/
+        .white {color:white;}
+        .bold {font-weight: bold;}
+
+
+    </style>
+</head>
+<body style="background-color: #1D1E23;">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSZXP7T"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header role="navigation" style="background: black; color: white;" class="navbar fixed-top navbar-full navbar-dark navigation-clean-button" aria-label="Site Navigation Menu">
+    <div class="navbar-brand">
+        <a href="/" class="navbar-brand"><img alt="" style="margin-right: 5px;" width="30px" src="/static/assets/img/b7e5d6e0a9f6fddb68ea920a07546e6a%20(1).png"><span class="sr-only">Toggle navigation</span>Fates List</a>
+    </div>
+    <div class="content-nomobile navbar-nav" style="margin-top: 1px;">
+        <li class="nav-item">
+            <a class="nav-link" href="/bot/admin/add" style="float: left; text-align: center; margin-top: 2px;">Add Bot</a>
+            <a class="nav-link" href="/server/admin/add" style="float: left; text-align: center; margin-top: 2px;">Add Server</a>
+        </li>
+    </div>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+<span class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Not Logged In</span>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-333">
+                <a class="dropdown-item" href="/auth/login">Login</a>
+                <a class="dropdown-item" href="/api/docs">API Docs</a>
+                <a class="dropdown-item" href="/support/fates/invite" target=”_blank”>Support Server</a>
+                <a class="dropdown-item" href="/support/fates/request" target=”_blank”>Support Request</a>
+                <a class="dropdown-item" href="/fates/stats" target=”_blank”>Fates List Stats</a>
+                <a class="dropdown-item" href="/static/tos.html">Terms Of Service</a>
+            </div>
+        </li>
+    </ul>
+</header>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc1/js/material.min.js"></script>
+<div style="padding: 2px;">
+    <div class="text-center" id="header_text" style="margin-right: auto;margin-left: auto;margin-top: 75px;">
+        <main>
+            <h2 style="font-weight: bold;font-size: 67px;color: rgba(255,255,255,0.87);">Fates List</h2>
+            <p style="font-weight: bold;opacity: 0.82;font-size: 20px;color: rgba(255,255,255,0.87);">Find the best bots for your servers.</p>
+    </div><div class="search_wrap search_wrap_3">
+    <div class="search_box is-mobile is-centered">
+        <form method="GET" action="/search/t">
+            <input type="text" class="input" placeholder="Search for bots related to your term." name="q" value="" aria-label="Search for something..">
+            <button aria-label="Search" style="border-radius: 40px 40px 40px 40px !important;" class="btn" type="submit">
+                <span class="iconify white" data-icon="fa-solid:search" data-inline="false"></span>
+            </button>
+        </form>
+    </div>
+    <small style="font-size: 14.5px; display: block; font-weight: bold; text-align: center; color: white;">Want to search by profile? Try <a href="/search/profile" style="opacity: 0.8; color: white;">Profile Search</a></small>
+</div>
+    <div class="d-flex flex-wrap justify-content-center align-items-center" style="width: 97%;margin: 0 auto;">
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=music'" title="Music"><span class="iconify" data-icon="fa-solid:music" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Music</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=moderation'" title="Moderation"><span class="iconify" data-icon="fa-solid:hammer" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Moderation</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=economy'" title="Economy"><span class="iconify" data-icon="fa-solid:coins" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Economy</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=fun'" title="Fun"><span class="iconify" data-icon="fa-solid:heart" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Fun</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=anime'" title="Anime"><span class="iconify" data-icon="fa-solid:camera" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Anime</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=games'" title="Games"><span class="iconify" data-icon="fa-solid:smile" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Games</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=web_dashboard'" title="Web dashboard"><span class="iconify" data-icon="fa-solid:chart-bar" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Web dashboard</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=logging'" title="Logging"><span class="iconify" data-icon="fa-solid:chart-line" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Logging</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=game_stats'" title="Game stats"><span class="iconify" data-icon="fa-solid:chart-pie" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Game stats</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=leveling'" title="Leveling"><span class="iconify" data-icon="fa-solid:arrow-up" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Leveling</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=roleplay'" title="Roleplay"><span class="iconify" data-icon="fa-solid:cat" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Roleplay</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=utility'" title="Utility"><span class="iconify" data-icon="fa-solid:desktop" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Utility</strong></span></button>
+        <button class="btn d-flex justify-content-center align-items-center btn-outline-light" style="margin-bottom: 4px !important; margin-left: 6px;" onclick="location.href='/search/tags?tag=social'" title="Social"><span class="iconify" data-icon="fa-solid:users" data-inline="false" aria-hidden="true"></span><span style="margin-left: 3px; font-size: 13px;"><strong>Social</strong></span></button>
+    </div>
+    <hr style="font-size: 20px;border-top-width: 1px;border-top-color: #eee;width: 90%;">
+    <div class="d-flex" style="margin-left: 5%;"><span class="iconify white" data-icon="fa-solid:search" data-inline="false" data-height="3em"></span>
+        <h4 style="color: rgba(255,255,255,0.87);margin-left: 15px;">Search Results</h4>
+    </div>
+    <div class="index-fl" style="color: #111112 !important;">
+        <div class="d-flex flex-wrap justify-content-sm-center align-items-sm-center justify-content-md-center justify-content-lg-center" id="tt-1" style="width: 90%;margin: 30px 5%;">
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="https://cdn.discordapp.com/attachments/809495772282093639/809497283023470622/night_duck_calgeka.png">
+                    <span class="iconify bot-card-cert" data-icon="fa-solid:certificate" data-inline="false" data-height="3em"></span>
+                    <a href="/bot/187636089073172481" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/187636089073172481/96bac38fcb632b7799ad33ab45ca592e.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">DuckHunt</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;"> Ducks spawn on a Discord channel. Will you be able to kill them? https://duckhunt.me</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">15.8 K</span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">61 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/187636089073172481" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/187636089073172481/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="">
+                    <a href="/bot/429656936435286016" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/429656936435286016/6eb5f4ebf8eb30aaa4eb450c431c25c3.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">RinBot</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">Guess the anime / anime quiz / trivia / anime music quiz (AMQ) - a must have for all anime themed servers</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">24.7 K</span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">4 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/429656936435286016" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/429656936435286016/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="https://cdn.discordapp.com/avatars/636264033657290784/c992bed218db47c8ab6f08b5a2eb9298.png?size=1024">
+                    <a href="/bot/636264033657290784" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/636264033657290784/c992bed218db47c8ab6f08b5a2eb9298.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">Scraby</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">A simple bot who was made for fun, economy and utility. It also has commands made for moderation.</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">0 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">2 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/636264033657290784" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/636264033657290784/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="">
+                    <a href="/bot/666151106958852116" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/666151106958852116/68272e979ecf1904abbcdd3c47d15c21.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">OKAI</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">Animojis | Level System | Role by Reaction | Music | Gif | Memes</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">0 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/666151106958852116" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/666151106958852116/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="https://cdn.discordapp.com/attachments/800619874807709706/801490386316165140/wide_EP2.png">
+                    <span class="iconify bot-card-cert" data-icon="fa-solid:certificate" data-inline="false" data-height="3em"></span>
+                    <a href="/bot/751100444188737617" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/751100444188737617/eb3689f53145f107de34c6fa588cb4f5.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">EpicBot 🏅</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">A simple, multipurpose Discord bot.</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">200 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/751100444188737617" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/751100444188737617/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="https://media.discordapp.net/attachments/760488875700387850/808577367592534016/image0.png">
+                    <a href="/bot/776764887505829908" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/776764887505829908/c3082de6649f1c700b4b8b78d376b79c.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">SafeBot</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">good bot have casino, image,fun commands verify and ticket system</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">0 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/776764887505829908" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/776764887505829908/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="">
+                    <a href="/bot/468459655929266176" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/468459655929266176/feba3b09921c8146ab8be6ff06059af2.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">Yunite</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">A custom game matchmaking, verification and creative bot for Fortnite</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">77 K</span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/468459655929266176" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/468459655929266176/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="">
+                    <a href="/bot/146293573422284800" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/146293573422284800/3d8d2294aa9d2017dc840f5fe3f91644.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">OcelotBOT</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">Dank memes, Games, Trivia and image filters, music, meme generators, image search and more</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">18.2 K</span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/146293573422284800" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/146293573422284800/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="https://media.tenor.com/images/5c68d6924f3e9b61f8b881629331be36/tenor.gif">
+                    <span class="iconify bot-card-cert" data-icon="fa-solid:certificate" data-inline="false" data-height="3em"></span>
+                    <a href="/bot/778582556311945227" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/778582556311945227/c3c41a42e7048b38a16f4bb46e2e3bb3.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">Black Tooth</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">Black Tooth is a multi-purpose discord bot. It has features in the following categories: Fun Memey Action</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">521 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/778582556311945227" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/778582556311945227/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="none">
+                    <a href="/bot/704517722100465746" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/704517722100465746/752fb2d2f3fdb0dfb23ae7adb2b71e99.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">Denky</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">Minigames, Backups, Captcha, Reaction Roles, Tickets, Giveaways, Utility, Moderation, AutoRole, Auto</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">0 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/704517722100465746" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/704517722100465746/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="">
+                    <a href="/bot/718911997474766920" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/718911997474766920/de9ff83aa3eae605829d93b0a69291b4.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">Sailboat</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">FREE • Easy to use • Reliable - An advanced Multipurpose bot ready to be unleash</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">0 </span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/718911997474766920" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/718911997474766920/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+            <section class="bot-card">
+                <div class="lozad bot-card-banner" data-background-image="https://media.discordapp.net/attachments/789940261580570645/803826586452492318/20210126_184549.jpg?width=380&amp;height=676">
+                    <span class="iconify bot-card-cert" data-icon="fa-solid:certificate" data-inline="false" data-height="3em"></span>
+                    <a href="/bot/371789181954818050" class="bot-card-view-link">
+                        <img alt="bot avatar" class="lozad bot-card-avatar" data-placeholder-background="black" data-src="https://cdn.discordapp.com/avatars/371789181954818050/9dd0f9f2cea3ec780e9626e0d177ad58.webp?size=128" />
+                    </a>
+                </div>
+                <div>
+                    <div class="bot-card-username">
+                        <h4 class="text-nowrap text-break text-center bot-card-username-txt white-bold">Hangman</h4>
+                    </div>
+                </div>
+                <p class="bot-card-description">
+                    <strong class="bot-card-description-txt" style="overflow-wrap: anywhere;">Play Hangman in Discord with Singleplayer, Mutiplayer and DM support.</strong>
+                </p>
+                <div class="d-flex bot-card-footer">
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:server" data-inline="false"></span><span style="margin-left: 3px;" class="bot-servers">35.8 K</span>
+                        </p>
+                    </div>
+                    <div class="bot-card-footer-stats">
+                        <p class="text-center white-bold">
+                            <span class="iconify i-m3" data-icon="fa-solid:thumbs-up" data-inline="false"></span><span style="margin-left: 3px;" class="bot-votes">0 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot-card-actions">
+                    <a role="button" aria-label="View" href="/bot/371789181954818050" class="btn btn-outline-light bot-card-actions-link bot-card-view-link">View</a>
+                    <a role="button" aria-label="Invite" href="/bot/371789181954818050/invite" class="btn btn-outline-light bot-card-actions-link bot-card-invite-link" style="margin-left: 6.5%;" target="_blank">Invite</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="/static/assets/js/main.js"></script>
+    </main>
+    <footer>
+    </footer>
+</div>
+</body>
+<script>
+    function getFormData($form){
+        var indexed_array = {};
+
+        $.map(unindexed_array, function(n, i){
+            indexed_array[n['name']] = n['value'];
+        });
+
+        return indexed_array;
+    }
+
+    function postjson(post_url, post_data) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", post_url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState === XMLHttpRequest.DONE) {
+                var json = JSON.parse(xhr.responseText);
+                alert(json.error);
+            }
+        };
+        var data = JSON.stringify(post_data);
+        xhr.send(data);
+    };
+
+    function sendForm(server_url) {
+        var formData = getFormData( $("#Sform") );
+        postjson(server_url, formData);
+    }
+</script>
+<script>
+    var observer = lozad()
+    observer.observe('.lozad', {
+        enableAutoReload: true // it will reload the new image when validating attributes changes
+    });
+</script>
+</html>
